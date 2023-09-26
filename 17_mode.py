@@ -11,3 +11,13 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+
+    counts = {num: nums.count(num) for num in nums}
+
+    max = 0
+    max_key = ""
+    for key,val in counts.items():
+        if val > max:
+            max = val
+            max_key = key
+    return max_key
