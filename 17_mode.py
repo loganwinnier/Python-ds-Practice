@@ -11,12 +11,12 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
-
+    # TODO: improve runtime by using regular freq counter
     counts = {num: nums.count(num) for num in nums}
 
     max = 0
     max_key = ""
-    for key,val in counts.items():
+    for key, val in counts.items():
         if val > max:
             max = val
             max_key = key
