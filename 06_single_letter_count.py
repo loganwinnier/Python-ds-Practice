@@ -15,3 +15,4 @@ def single_letter_count(word, letter):
         if letter.lower() == ltr.lower():
             count += 1
     return count
+    # built in count would make this easier
